@@ -1,0 +1,14 @@
+import pandas as pd
+import numpy as np
+
+loan_data_backup = pd.read_csv('loan_data_2007_2014.csv', index_col=0)
+
+loan_data = loan_data_backup.copy()
+
+pd.options.display.max_columns = None
+
+loan_data.head()
+
+loan_data.columns.values
+
+loan_data.info()
